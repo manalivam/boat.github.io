@@ -1,0 +1,499 @@
+:root{
+    --blue:rgb(7, 7, 7);
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+
+*::selection{
+    background: #637cbb;
+    color: #fff;
+}
+
+
+html{
+    font-size: 50%;
+    overflow-x: hidden;
+}
+
+body{
+    
+    overflow-x: hidden;
+}
+
+section{
+    padding: 0 7%;
+}
+
+.btn{
+    padding: .6rem 3rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+    color: #111;
+}
+
+.btn:hover{
+    background: blue;
+    color: #fff;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000;
+    padding: 2.5rem 4%;
+    background: #080808;
+}
+
+
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+header .navbar ul li a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #fff;
+    position: relative;
+    padding: 0px 30px;
+}
+
+header .navbar ul li a:hover{
+    color: red;
+}
+
+header .nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+header .nav ul li a{
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: #fff;
+    position: relative;
+    padding: 0px 16px;
+}
+
+header .nav ul li a:hover{
+    color: red;
+}
+
+
+.home{
+    width: 100%;
+    height: 100px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: linear-gradient(280deg,#0abde3 80%, black 50%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 9rem;
+}
+
+.home .content h1{
+    font-size: 6rem;
+    color:#fff;
+}
+
+.home .content p{
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+span.vertical-separator {
+    display: inline-block;
+    border-left: 2px solid #ff0000;
+    line-height: 1.5;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.about{
+    background: #333;
+}
+
+.about .heading{
+    font-size: 4rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    flex: 1 1 45rem;
+    color: #fff;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 2.5rem;
+}
+
+.about .row .content h3{
+    font-size: 4.5rem;
+    color: #fff;
+}
+
+.about .row .content p{
+    font-size: 2rem;
+    color: #eee;
+    padding: 1.5rem 0;
+}
+
+.about .row .content p i{
+    padding-right: .5rem;
+    color: #637cbb;
+}
+
+span.vertical-separator {
+    display: inline-block;
+    border-left: 2px solid #ff0000;
+    line-height: 1.5;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+
+.feature{
+    background: #111;
+    min-height: 100vh;
+}
+
+.feature .heading{
+    font-size: 4rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    flex: 1 1 45rem;
+    color: #fff;
+}
+
+.feature .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature .box-container .box{
+    text-align: center;
+    margin: 1.5rem;
+    padding: 1rem;
+    border: .2rem solid #fff;
+    width: 27rem;
+}
+
+.feature .box-container .box:hover{
+    background:#637cbb;
+}
+
+
+.feature .box-container .box i{
+    height: 7rem;
+    width: 7rem;
+    line-height: 7rem;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff;
+    color: #333;
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.feature .box-container .box h3{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.feature .box-container .box p{
+    color: #eee;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+}
+
+span.vertical-separator {
+    display: inline-block;
+    border-left: 2px solid #ff0000;
+    line-height: 1.5;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+
+.product{
+    min-height: 100vh;
+    background: #222;
+}
+
+.product .heading{
+    font-size: 4rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    flex: 1 1 45rem;
+    color: #fff;
+}
+
+.product .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product .box-container .box{
+    margin: 1.5rem;
+    padding: 1rem;
+    width: 50rem;
+    background: #637cbb;
+    box-shadow: 0 0 1rem #080808;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product .box-container .box .content{
+    padding: 1rem;
+}
+
+.product .box-container .box .content h3{
+    font-size: 3.5rem;
+    color: #111;
+}
+
+.product .box-container .box .content p{
+    font-size: 1.8rem;
+    color: #111;
+    padding: 1rem 0;
+}
+
+.product .box-container .box .content .price{
+    font-size: 3rem;
+    color: #111;
+}
+
+span.vertical-separator {
+    display: inline-block;
+    border-left: 2px solid #ff0000;
+    line-height: 1.5;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+
+.contact{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #111 ;
+}
+
+.contact form{
+    flex: 1 1 40rem;
+    background: #444;
+    padding: 3rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+}
+
+.contact form .box{
+    height: 5rem;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 0.5rem solid #111;
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #fff;
+    text-transform: none;
+    
+}
+
+.contact form textarea{
+    height: 15rem;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1rem solid #fff;
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #fff;
+    text-transform: none;
+    resize: none;
+}
+
+.contact form .box::placeholder, .contact form textarea{
+    text-transform: capitalize;
+}
+
+.contact form .box:focus, .contact form textarea{
+    border-color: #637c88;
+}
+
+
+.contact form .btn{
+    width: 100%;
+}
+
+.contact .content{
+    flex:1 1 40rem;
+    padding: 4rem;
+}
+
+.contact .content h3{
+    font-size: 4.5rem;
+    color: #fff;
+}
+
+.contact .content p{
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.contact .content .icons{
+    display: flex;
+    align-items: center;
+}
+
+.contact .content .icons p{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.contact .content .icons i{
+    font-size: 2rem;
+    color: #637cbb;
+    padding-right: 1rem;
+}
+
+.footer{
+    background: #222;
+    text-align: center;
+}
+
+.footer .share{
+    padding: 1rem 0;
+}
+
+.footer .share h3{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.footer .share a{
+    font-size: 3rem;
+    color: #637c88;
+    margin: 3rem 1.4rem;
+}
+
+.footer .share a:hover{
+    color: #fff;
+}
+
+.footer .credit{
+    padding: 2rem 1rem;
+    color: #fff;
+    background: #111;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.footer .credit a{
+    color: #637cbb;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
